@@ -15,7 +15,7 @@ return(
         <form onSubmit={onSubmit} 
          className="ui form">
             <div className="field">
-            <label>video search </label>
+            <label>Search a Video </label>
                 <input
                  value={term}
                  type="text"
