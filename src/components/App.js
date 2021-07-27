@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar"
 import youtube from "../apis/youtube"
 import VideoList from "./VideoList"
 import VideoDetail from "./VideoDetail"
+import  "./VideoItem.css"
 
 
 
@@ -28,8 +29,8 @@ const App = ()=> {
        
      }
 
-    //  const onVideoSelect = (video)=>{
-    //     setSelectedVideo(video)}
+     const onVideoSelect = (video)=>{
+        setSelectedVideo(video)}
 
         return(
             <div className="ui container">
@@ -44,7 +45,7 @@ const App = ()=> {
                             </div>
                             <div className="five wide column">
                             <VideoList
-                            onVideoSelect={selectedVideo}
+                            onVideoSelect={onVideoSelect}
                             videos={videos}
                             />
                             </div>
